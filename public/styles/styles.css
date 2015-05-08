@@ -407,7 +407,7 @@ th {
 }
 @font-face {
   font-family: 'Bodoni';
-  src: url("../fonts/Bodoni.ttc");
+  src: url("../fonts/bodoni-book.ttf");
 }
 @font-face {
   font-family: 'Didot';
@@ -782,6 +782,8 @@ body {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 }
 .card .text-wrap .copy {
   color: #ededed;
@@ -964,12 +966,12 @@ body {
 }
 .ferrari .text-wrap .letters {
   line-height: 1;
-  letter-spacing: -10px;
+  letter-spacing: -14px;
 }
 .ferrari .text-wrap .letters .l {
   display: inline-block;
   position: relative;
-  left: -20px;
+  left: -110px;
   -moz-transform: rotate(-18deg);
   -ms-transform: rotate(-18deg);
   -webkit-transform: rotate(-18deg);
@@ -978,7 +980,7 @@ body {
 .ferrari .text-wrap .letters .r {
   display: inline-block;
   position: relative;
-  right: -22px;
+  right: -110px;
   -moz-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
   -webkit-transform: rotate(20deg);
@@ -994,7 +996,7 @@ body {
 
 .bentley .text-wrap {
   background-color: #134f9a;
-  font-size: 130px;
+  font-size: 160px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: #fafafa;
@@ -1037,4 +1039,87 @@ body {
 .peugeot .foto-wrap {
   background: url('../images/cars/peugeot.jpg?1431018998') 50% 100% no-repeat;
   background-size: cover;
+}
+
+.credits {
+  text-align: center;
+  background-color: #dedede;
+  height: 100%;
+  position: relative;
+}
+.credits .text {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.credits .text h1 {
+  font-family: "Bodoni", serif;
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight: 100;
+  letter-spacing: 40px;
+  margin: 0;
+}
+.credits .text h1 span {
+  letter-spacing: 0;
+}
+.credits .text h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: #797979;
+  margin: 0;
+}
+.credits .logo {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+.credits .logo a {
+  text-decoration: none;
+  color: #161616;
+  position: relative;
+}
+.credits .logo a:hover, .credits .logo a:active {
+  text-decoration: underline;
+}
+.credits .logo a:before {
+  content: "";
+  display: inline-block;
+  width: 66px;
+  height: 67px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABDCAMAAAAf1iN/AAAAOVBMVEUAAAAWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhaUQ1rHAAAAEnRSTlMA47MFHPrvD9Z3LaGDkmfFQFM4W5qLAAADBElEQVRYw51YWYKsIAyUfV/0/od9oyBLALVf/prBSlKpQJhtWxndLZaIHwdHEtudbj9adOgAhlz8/j21w/fJpPoWCzXsWBpz7yDEPgBcIIq8cCDb7LFTft+9crjNTMbHEKoz7HX7J+0xq4EsEUQo/me8UVViwWLB450E8ot0ib9B5JRVim7SxTpV4XI6iK4RkH4mXKNVHEI+Z9nsxBkD7szrhrxrj7jsrV9WadV964CM0dVWs18QbgzW0EYSEZh8hSAp71BXfKrFwCSJ3hmMsRmOi1w/Xzjm128gfdFI+vTY6y1ei1x0XJrejRs6lvt2g2kZTUFwMRPh1a/GOiOhaOj1FSINE7aNsvQTsjfrNAA52YaNAINQJfR6vFB/FSFUQlLwV1E0kAQxhcFShr2cRAqKQ5eANODpRBCgK0C0uhBw5SGheJu8SWjr0oQhcyaCdWTuZa/ueSvIgFAmskZiV6pOJhQIhAJ5xUQ/E33Pt0EooLAqYsJSZqaNLk7iNQBiB2SYxOZ9elTiHDyMZhBJKgnJwSBqDw5RaKAMuaGmUm6WMeCCEyBjtPHqk/CZL91DtCfb1V18a8KO83A7MhiFEEeKQg0aiuMNAzi6E2GJCzu42ye3DzgSsk9+17aU+Zgc8PfUIvfJ5SOTFEIVG9R3btZdWTXMFbnPTArm3NYNZ19GqlwiVXqHrhS0Mp9TjoW9HsK+Q4RcO1FS7yHQ69WWNMfIffoSQCdQwMzqpWhLJrJvhpdJI9bq6zIsgJ40z5OKbGiXd038+mQYLfsLTW3M0JMHe5hRVcdYupbOeQNO7zy+Idx1S7//7jozDNzzstQLT/XzhRsO6zO/SV20HKuWPzVhMvlzJdaPDQ9nrYVxF0nt2Hb0CePEt0YJzipljez2MT023Y+mptPvL4YXev1uwwxeXyMf7ek18RFBP76K/huhn6meLaxfq4p9QnDk6zt1lcT+8kxQ/OW17F6fXpuwTyDmw/1ygii5arhvAKnvbIDMcrOT7Tf7u4lNOP+LwrjE1q/9/wO78YzvrVchYQAAAABJRU5ErkJggg==') 0 0 no-repeat;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.credits .share {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+.credits .share .tweet {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  margin-left: 10px;
 }
