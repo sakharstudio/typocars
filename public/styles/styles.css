@@ -8,6 +8,10 @@
 @import url(http://fonts.googleapis.com/css?family=Baumans);
 @import url(http://fonts.googleapis.com/css?family=Comfortaa:700);
 @import url(http://fonts.googleapis.com/css?family=Carme);
+@import url(http://fonts.googleapis.com/css?family=Vidaloka);
+@import url(http://fonts.googleapis.com/css?family=Candal);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(http://fonts.googleapis.com/css?family=Cardo);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -949,7 +953,7 @@ body {
 .ford .text-wrap {
   background-color: #641b15;
   font-size: 150px;
-  font-family: "Phosphate", sans-serif;
+  font-family: "Candal", sans-serif;
   color: #e7dcbb;
 }
 .ford .foto-wrap {
@@ -960,18 +964,18 @@ body {
 .ferrari .text-wrap {
   background-color: #e93606;
   font-size: 150px;
-  font-family: "Bodoni", serif;
+  font-family: "Playfair Display", serif;
   color: #ededed;
   text-align: center;
 }
 .ferrari .text-wrap .letters {
   line-height: 1;
-  letter-spacing: -14px;
+  letter-spacing: -23px;
 }
 .ferrari .text-wrap .letters .l {
   display: inline-block;
   position: relative;
-  left: -110px;
+  left: -80px;
   -moz-transform: rotate(-18deg);
   -ms-transform: rotate(-18deg);
   -webkit-transform: rotate(-18deg);
@@ -980,14 +984,14 @@ body {
 .ferrari .text-wrap .letters .r {
   display: inline-block;
   position: relative;
-  right: -110px;
+  right: -80px;
   -moz-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
 }
 .ferrari .text-wrap .letters div {
-  line-height: 0.4;
+  line-height: 0.28;
 }
 .ferrari .foto-wrap {
   background: url('../images/cars/ferrari.jpg?1431012011') 50% 80% no-repeat;
@@ -1013,7 +1017,7 @@ body {
 .peugeot .text-wrap {
   background-color: #2f68b4;
   font-size: 130px;
-  font-family: "Didot", serif;
+  font-family: "Cardo", serif;
   font-weight: 300;
   color: #ffffff;
 }
@@ -1022,19 +1026,15 @@ body {
 }
 .peugeot .text-wrap .letters div {
   line-height: 0.36;
-  letter-spacing: -15px;
+  letter-spacing: -12px;
   text-align: center;
 }
 .peugeot .text-wrap .letters div span {
-  letter-spacing: -25px;
-}
-.peugeot .text-wrap .letters .l {
-  position: relative;
-  left: 33px;
+  letter-spacing: -11px;
 }
 .peugeot .text-wrap .letters .r {
   position: relative;
-  left: -7px;
+  left: 10px;
 }
 .peugeot .foto-wrap {
   background: url('../images/cars/peugeot.jpg?1431018998') 50% 100% no-repeat;
@@ -1058,11 +1058,11 @@ body {
   transform: translate(-50%, -50%);
 }
 .credits .text h1 {
-  font-family: "Bodoni", serif;
+  font-family: "Vidaloka", serif;
   text-transform: uppercase;
   font-size: 64px;
   font-weight: 100;
-  letter-spacing: 40px;
+  letter-spacing: 38px;
   margin: 0;
 }
 .credits .text h1 span {
