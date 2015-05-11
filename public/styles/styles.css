@@ -404,19 +404,6 @@ th {
 /*
  * Typography
  */
-@font-face {
-  font-family: 'Phosphate';
-  font-weight: 400;
-  src: url("../fonts/Phosphate.ttc");
-}
-@font-face {
-  font-family: 'Bodoni';
-  src: url("../fonts/bodoni-book.ttf");
-}
-@font-face {
-  font-family: 'Didot';
-  src: url("../fonts/Didot.ttc");
-}
 /* Colors */
 /*
  * Positioning
