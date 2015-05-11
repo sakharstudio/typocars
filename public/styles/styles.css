@@ -1034,6 +1034,10 @@ body {
   height: 100%;
   position: relative;
 }
+.credits.last .text h1 {
+  text-transform: none;
+  letter-spacing: normal;
+}
 .credits .text {
   width: 100%;
   position: absolute;
