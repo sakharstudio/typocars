@@ -733,6 +733,230 @@ html, body {
   display: inline-block;
 }
 
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Smartphones  and up */
+.credits .text h1 {
+  letter-spacing: normal;
+  font-size: 44px;
+}
+.credits .text h2 {
+  padding: 0 12px;
+  font-size: 18px;
+}
+
+.card .foot {
+  height: auto;
+  padding: 12px;
+  float: none;
+}
+.card .foot .cont {
+  width: 100%;
+}
+.card .foot .cont:nth-child(1) {
+  margin-bottom: 12px;
+}
+.card .foot .cont .name {
+  padding-top: 0;
+  font-size: 20px;
+  margin-left: 6px;
+}
+.card .foot .cont .name, .card .foot .cont .label {
+  display: inline-block;
+}
+
+.card .text-wrap .copy {
+  margin-right: 12px;
+}
+
+.bmw .text-wrap,
+.jeep .text-wrap,
+.ferrari .text-wrap,
+.peugeot .text-wrap,
+.ford .text-wrap,
+.ferrari .text-wrap,
+.bentley .text-wrap {
+  font-size: 60px;
+}
+
+.porsche .text-wrap {
+  font-size: 50px;
+}
+
+.card .foto-wrap {
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.porsche .text-wrap .letters span .underscore {
+  top: 0;
+}
+
+.porsche .text-wrap .letters .l, .porsche .text-wrap .letters .r {
+  position: relative;
+}
+.porsche .text-wrap .letters .l {
+  left: -15px;
+}
+
+.hidden-xs {
+  display: none;
+}
+
+.ferrari .text-wrap .letters .l {
+  left: -60px;
+}
+.ferrari .text-wrap .letters .r {
+  right: -60px;
+  top: -7px;
+}
+
+.bentley .text-wrap .letters sup:nth-child(1) {
+  left: -6px;
+}
+.bentley .text-wrap .letters sup:nth-child(2) {
+  right: -6px;
+}
+
+.peugeot .text-wrap .letters .l {
+  left: 40px;
+}
+.peugeot .text-wrap .letters .r {
+  left: -30px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .hidden-xs {
+    display: inline;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+
+  .credits .text h1 {
+    letter-spacing: 30px;
+    font-size: 64px;
+  }
+  .credits .text h2 {
+    padding: 0;
+    font-size: 22px;
+  }
+
+  .card .foot {
+    height: 125px;
+    padding: 20px 50px;
+  }
+  .card .foot .cont {
+    width: 33.33333%;
+    margin-bottom: 0;
+    float: left;
+  }
+  .card .foot .cont:nth-child(2) {
+    text-align: center;
+  }
+  .card .foot .cont:nth-child(3) {
+    text-align: right;
+  }
+  .card .foot .cont .name {
+    padding-top: 10px;
+    font-size: 28px;
+    margin-left: 0;
+  }
+  .card .foot .cont .name, .card .foot .cont .label {
+    display: block;
+  }
+
+  .card .text-wrap .copy {
+    margin-right: 50px;
+  }
+
+  .card .foto-wrap {
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  .bmw .text-wrap,
+  .jeep .text-wrap,
+  .porsche .text-wrap,
+  .ferrari .text-wrap,
+  .peugeot .text-wrap {
+    font-size: 130px;
+  }
+
+  .ford .text-wrap,
+  .ferrari .text-wrap {
+    font-size: 150px;
+  }
+
+  .bentley .text-wrap {
+    font-size: 160px;
+  }
+
+  .porsche .text-wrap .letters span .underscore {
+    top: -48px;
+  }
+
+  .ferrari .text-wrap .letters .l {
+    left: -20px;
+  }
+  .ferrari .text-wrap .letters .r {
+    right: -20px;
+  }
+
+  .bentley .text-wrap .letters sup:nth-child(1) {
+    left: 0;
+  }
+  .bentley .text-wrap .letters sup:nth-child(2) {
+    right: 0;
+  }
+
+  .peugeot .text-wrap .letters .l {
+    left: 0;
+  }
+  .peugeot .text-wrap .letters .r {
+    left: 10px;
+  }
+
+  .porsche .text-wrap .letters .l, .porsche .text-wrap .letters .r {
+    position: relative;
+  }
+  .porsche .text-wrap .letters .l {
+    left: -40px;
+  }
+  .porsche .text-wrap .letters .r {
+    left: 25px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .credits .text h1 {
+    letter-spacing: 38px;
+  }
+
+  .hidden-sm {
+    display: inline;
+  }
+
+  .card .foot .cont .name {
+    font-size: 32px;
+  }
+
+  .ferrari .text-wrap .letters .l {
+    left: -80px;
+  }
+  .ferrari .text-wrap .letters .r {
+    right: -80px;
+  }
+
+  .card .foto-wrap {
+    background-position: 50% 80%;
+    background-size: cover;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
 /*
  * Base
  */
@@ -759,6 +983,9 @@ body {
 .card {
   height: 100%;
 }
+.card .wrap {
+  background-color: #dedede;
+}
 .card .text-wrap {
   position: absolute;
   height: 100%;
@@ -782,7 +1009,6 @@ body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   display: inline-block;
-  padding-right: 50px;
   padding-bottom: 3px;
   position: absolute;
   right: 0;
@@ -807,23 +1033,15 @@ body {
   position: absolute;
 }
 .card .foot {
-  height: 125px;
-  padding: 20px 50px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   background-color: #e8e8e8;
-}
-.card .foot .cont {
-  float: left;
-  width: 33.33333%;
 }
 .card .foot .cont .label {
   color: #787878;
 }
 .card .foot .cont .name {
-  font-size: 32px;
   line-height: 1;
-  padding-top: 10px;
 }
 .card .foot .toggle-link {
   display: inline-block;
@@ -887,18 +1105,15 @@ body {
 
 .bmw .text-wrap {
   background-color: #1c1c1c;
-  font-size: 130px;
   font-family: "Baumans", cursive;
   color: #ececec;
 }
 .bmw .foto-wrap {
-  background: url('../images/cars/bmw.jpg?1430929664') 50% 80% no-repeat;
-  background-size: cover;
+  background-image: url('../images/cars/bmw.jpg?1430929664');
 }
 
 .jeep .text-wrap {
   background-color: #313838;
-  font-size: 130px;
   font-family: "Comfortaa", cursive;
   color: #fef9f1;
 }
@@ -907,13 +1122,11 @@ body {
   top: -0.3em;
 }
 .jeep .foto-wrap {
-  background: url('../images/cars/jeep.jpg?1431005233') 50% 80% no-repeat;
-  background-size: cover;
+  background-image: url('../images/cars/jeep.jpg?1431005233');
 }
 
 .porsche .text-wrap {
   background-color: #c5ba57;
-  font-size: 130px;
   line-height: 0.7;
   font-family: "Carme", sans-serif;
   color: #ffffff;
@@ -927,30 +1140,25 @@ body {
 }
 .porsche .text-wrap .letters span .underscore {
   position: relative;
-  top: -48px;
 }
 .porsche .text-wrap .copy {
   margin-bottom: 5px;
 }
 .porsche .foto-wrap {
-  background: url('../images/cars/porsche.jpg?1431007182') 50% 80% no-repeat;
-  background-size: cover;
+  background-image: url('../images/cars/porsche.jpg?1431007182');
 }
 
 .ford .text-wrap {
   background-color: #641b15;
-  font-size: 150px;
   font-family: "Candal", sans-serif;
   color: #e7dcbb;
 }
 .ford .foto-wrap {
-  background: url('../images/cars/ford.jpg?1431007735') 50% 80% no-repeat;
-  background-size: cover;
+  background-image: url('../images/cars/ford.jpg?1431007735');
 }
 
 .ferrari .text-wrap {
   background-color: #e93606;
-  font-size: 150px;
   font-family: "Playfair Display", serif;
   color: #ededed;
   text-align: center;
@@ -962,7 +1170,6 @@ body {
 .ferrari .text-wrap .letters .l {
   display: inline-block;
   position: relative;
-  left: -80px;
   -moz-transform: rotate(-18deg);
   -ms-transform: rotate(-18deg);
   -webkit-transform: rotate(-18deg);
@@ -971,7 +1178,6 @@ body {
 .ferrari .text-wrap .letters .r {
   display: inline-block;
   position: relative;
-  right: -80px;
   -moz-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
   -webkit-transform: rotate(20deg);
@@ -981,13 +1187,11 @@ body {
   line-height: 0.28;
 }
 .ferrari .foto-wrap {
-  background: url('../images/cars/ferrari.jpg?1431012011') 50% 80% no-repeat;
-  background-size: cover;
+  background-image: url('../images/cars/ferrari.jpg?1431012011');
 }
 
 .bentley .text-wrap {
   background-color: #134f9a;
-  font-size: 160px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: #fafafa;
@@ -997,13 +1201,11 @@ body {
   letter-spacing: -10px;
 }
 .bentley .foto-wrap {
-  background: url('../images/cars/bentley.jpg?1431014859') 50% 100% no-repeat;
-  background-size: cover;
+  background-image: url('../images/cars/bentley.jpg?1431014859');
 }
 
 .peugeot .text-wrap {
   background-color: #2f68b4;
-  font-size: 130px;
   font-family: "Cardo", serif;
   font-weight: 300;
   color: #ffffff;
@@ -1019,13 +1221,11 @@ body {
 .peugeot .text-wrap .letters div span {
   letter-spacing: -11px;
 }
-.peugeot .text-wrap .letters .r {
+.peugeot .text-wrap .letters .l, .peugeot .text-wrap .letters .r {
   position: relative;
-  left: 10px;
 }
 .peugeot .foto-wrap {
-  background: url('../images/cars/peugeot.jpg?1431018998') 50% 100% no-repeat;
-  background-size: cover;
+  background-image: url('../images/cars/peugeot.jpg?1431018998');
 }
 
 .credits {
@@ -1051,9 +1251,7 @@ body {
 .credits .text h1 {
   font-family: "Vidaloka", serif;
   text-transform: uppercase;
-  font-size: 64px;
   font-weight: 100;
-  letter-spacing: 38px;
   margin: 0;
 }
 .credits .text h1 span {
@@ -1062,7 +1260,6 @@ body {
 .credits .text h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 22px;
   color: #797979;
   margin: 0;
 }
